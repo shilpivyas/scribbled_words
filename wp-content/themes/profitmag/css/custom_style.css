@@ -1,0 +1,210 @@
+/* 
+    Document   : custom_style.css
+    Created on : 14 May, 2015, 3:22:37 PM
+    Author     : blackid18
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.header-wrapper .main-navigation ul ul.sub-menu > li > ul.sub-menu {
+    top: 0 !important;
+}
+
+.home-bxslider > li > img {
+    height: 365px;
+}
+
+.beside-post.featured-images img {
+    height: 172px !important;
+}
+
+.home-media-gallery #gallery-slider .slides > li > img {
+    height: 500px;
+}
+
+.home-media-gallery #gallery-carousel .slides > li > img {
+    height: 70px;
+}
+
+.featured-post .post-thumb img {
+    height: 170px;
+}
+
+.home-featured-block.block-3 img {
+    height: 100px;
+    width: 148px;
+}
+
+.slider-section .bx-controls-direction {
+    bottom: 65px !important;
+}
+
+.header-wrapper .search-block {
+    margin-top: -12px !important;
+}
+
+.header-wrapper .search-block #searchsubmit, .widget_search #searchsubmit {
+    top: 29px !important;
+}
+
+#subscription-block {
+    background-color: rgba(0,128,128,0.7);
+    width: 350px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: #F5F5F5;
+    
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+}
+
+#subscription-block > .subscription-head > span {
+    font-size: 17px;
+    padding: 10px;
+}
+
+#subscription-block .subscription-body {
+    background-color: rgba(0,128,128,0.8);
+    padding: 10px 20px;
+}
+
+#subscription-block .subscription-body .subscription-desc {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+#subscription-block .subscription-body .form-control {
+    margin-top: 10px;
+}
+
+#subscription-block form {
+    margin-bottom: 10px;
+}
+
+#subscription-block img {
+    position: fixed;
+    /* Raised Ballon*/
+    bottom: 214px;
+    /*Drop ballon*/
+    /*bottom: 20px;*/
+    right: -20px;
+    z-index: 3;
+}
+
+#subscription-block img.slide-down-img {
+    -moz-animation-name: dropBalloon;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 0.5s;
+
+    -webkit-animation-name: dropBalloon;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 0.5s;
+
+    animation-name: dropBalloon;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+}
+
+#subscription-block img.slide-up-img {
+    -moz-animation-name: raiseBalloon;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 0.5s;
+
+    -webkit-animation-name: raiseBalloon;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 0.5s;
+
+    animation-name: raiseBalloon;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+}
+
+/* Raise Balloon */
+@-moz-keyframes raiseBalloon {
+    0% {
+        -moz-transform: translateY(172px);
+    }
+    100% {
+        -moz-transform: translateY(0);
+    }
+}
+@-webkit-keyframes raiseBalloon {
+    0% {
+        -webkit-transform: translateY(172px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+    }
+}
+@keyframes raiseBalloon {
+    0% {
+        transform: translateY(172px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Drop Balloon */
+@-moz-keyframes dropBalloon {
+    0% {
+        -moz-transform: translateY(-150px);
+    }
+    100% {
+        -moz-transform: translateY(0);
+    }
+}
+@-webkit-keyframes dropBalloon {
+    0% {
+        -webkit-transform: translateY(-150px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+    }
+}
+@keyframes dropBalloon {
+    0% {
+        transform: translateY(-150px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+figure.single-thumb {
+    width: 100% !important;
+}
+
+.single-thumb > img {
+    height: 360px !important;
+}
+
+.affix {
+    left: 0;
+    right: 0;
+    top: 0px;
+    height: 48px;
+    z-index: 999;
+    position: fixed!important;
+}
+
+.form-allowed-tags code {
+    clear: both;
+    width: 66% !important;
+    white-space: pre-wrap;
+}
+
+.comment-form textarea {
+    width: 100%;
+}
