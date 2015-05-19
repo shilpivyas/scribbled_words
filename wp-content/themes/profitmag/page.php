@@ -22,7 +22,7 @@ if( $sidebar_layout == 'both_sidebar' ) {
        echo '<div id="primary-wrap" class="clearfix">';
 }
 ?>
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area shilpi">
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
